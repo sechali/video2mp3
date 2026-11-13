@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Media storage (keep folders, ignore files)
+uploads/*
+!uploads/.gitkeep
+converted/*
+!converted/.gitkeep
+
+# Media files
+*.mp4
+*.mp3
+*.mkv
+*.avi
+*.mov
+*.webm
+*.flv
+*.wmv
+*.zip
+*.log
+
+# Environment & IDE
+.env
+.venv
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

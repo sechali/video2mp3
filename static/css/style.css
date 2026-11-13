@@ -1,0 +1,77 @@
+/* Custom Styles for Video to MP3 Studio */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+    }
+}
+
+.glow-active {
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Range input styling */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #10b981;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+/* Progress bar strip animation */
+@keyframes progressStripes {
+    0% {
+        background-position: 1rem 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.progress-animated {
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 1rem 1rem;
+    animation: progressStripes 1s linear infinite;
+}
+
+/* Card hover transitions */
+.task-card {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.task-card:hover {
+    border-color: rgba(51, 65, 85, 1);
+    transform: translateY(-1px);
+}
